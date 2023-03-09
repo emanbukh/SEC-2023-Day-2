@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* setup identifier using class @ id */
+      .parent {
+        height: 300px;
+        width: 300px;
+        background-color: lightblue;
+        position: relative;
+      }
+      .child {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        /* move downward 100px */
+        /* move left 100px */
+      }
+      .child-1 {
+        /* downward 0px */
+        /* top,left,right,bottom */
+        top: 0px;
+        /* right 0px */
+        left: 0px;
+        z-index: 3;
+      }
+      .child-2 {
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+      }
+      .child-3 {
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div style="background-color: yellow" class="child child-1">1</div>
+      <div style="background-color: blue" class="child child-2">2</div>
+      <div style="background-color: red" class="child child-3">3</div>
+    </div>
+  </body>
+</html>
